@@ -27,3 +27,17 @@ Node:
 
 node.cryptometh.com
 node.cryptometh.net
+
+
+
+cryptometh.conf
+rpcuser=cryptomethrpc
+rpcpassword=password
+daemon=1
+server=1
+rpcallowip=127.0.0.1
+addnode=146.185.135.97
+addnode=188.226.172.151
+addnode=89.70.228.120
+addnode=162.243.170.248
+addnode=107.170.210.196
