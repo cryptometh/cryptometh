@@ -40,9 +40,6 @@
         <file alias="filesave">res/icons/filesave.png</file>
         <file alias="qrcode">res/icons/qrcode.png</file>
         <file alias="debugwindow">res/icons/debugwindow.png</file>
-        <file alias="mining">res/icons/mining.png</file>
-        <file alias="mining_active">res/icons/mining_active.png</file>
-        <file alias="mining_inactive">res/icons/mining_inactive.png</file>
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>

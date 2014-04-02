@@ -1,7 +1,7 @@
 TEMPLATE = app
 TARGET = cryptometh-qt
 macx:TARGET = "CryptoMETH-Qt"
-VERSION = 0.9.0
+VERSION = 1.1.0
 INCLUDEPATH += src src/json src/qt
 QT += core gui network
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -243,7 +243,6 @@ HEADERS += src/qt/bitcoingui.h \
     src/threadsafety.h \
     src/limitedmap.h \
     src/qt/splashscreen.h \
-    src/qt/miningpage.h \
     src/sph_keccak.h \
     src/sph_types.h
 
@@ -313,7 +312,6 @@ SOURCES += src/qt/bitcoin.cpp \
     src/noui.cpp \
     src/leveldb.cpp \
     src/txdb.cpp \
-    src/qt/miningpage.cpp \
     src/qt/splashscreen.cpp \
     src/keccak.c 
 
@@ -329,7 +327,6 @@ FORMS += src/qt/forms/sendcoinsdialog.ui \
     src/qt/forms/sendcoinsentry.ui \
     src/qt/forms/askpassphrasedialog.ui \
     src/qt/forms/rpcconsole.ui \
-    src/qt/forms/miningpage.ui \
     src/qt/forms/optionsdialog.ui
 
 contains(USE_QRCODE, 1) {
