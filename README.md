@@ -1,4 +1,4 @@
-CryptoMETH
+CryptoMETH v1.1.0 
 http://cryptometh.com
 ==============
 
@@ -42,4 +42,8 @@ addnode=162.243.170.248
 addnode=107.170.210.196  
 addnode=94.23.18.51  
 addnode=98.126.98.138  
-addnode=188.226.203.69   
+addnode=46.28.204.5  
+addnode=176.119.43.140  
+addnode=209.73.144.178  
+addnode=178.32.56.166  
+addnode=98.126.98.138  
