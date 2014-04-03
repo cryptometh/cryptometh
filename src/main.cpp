@@ -1081,6 +1081,7 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
     return pblock->GetHash();
 }
 
+static const int64 Target_Time_Switch = 7000; //fork
 static const int64 nGenesisBlockRewardCoin = 1 * COIN;
 static const int64 nWarmUp = 720000 * COIN;
 static const int64 nCatchUp = 16 * COIN;
@@ -1252,14 +1253,22 @@ unsigned int static KimotoGravityWell(const CBlockIndex* pindexLast, const CBloc
 
 unsigned int static GetNextWorkRequired_V2(const CBlockIndex* pindexLast, const CBlockHeader *pblock)
 {
-        static const int64 BlocksTargetSpacing = 80; // 80 seconds
+			int nHeight = pindexLast->nHeight + 1;
+        static const int64 BlocksTargetSpacing = 80;
+			static const int64 BlocksTargetSpacing_New = 2 * 60; // 2 minutes
         static const unsigned int TimeDaySeconds = 60 * 60 * 24;
         int64 PastSecondsMin = TimeDaySeconds * 0.01;
         int64 PastSecondsMax = TimeDaySeconds * 0.14;
+			if(nHeight>=Target_Time_Switch)	{ 
+			uint64 PastBlocksMin = PastSecondsMin / BlocksTargetSpacing_New;
+			uint64 PastBlocksMax = PastSecondsMax / BlocksTargetSpacing_New; 
+			return KimotoGravityWell(pindexLast, pblock, BlocksTargetSpacing_New, PastBlocksMin, PastBlocksMax);
+			}
+			else {
         uint64 PastBlocksMin = PastSecondsMin / BlocksTargetSpacing;
         uint64 PastBlocksMax = PastSecondsMax / BlocksTargetSpacing;
-        
         return KimotoGravityWell(pindexLast, pblock, BlocksTargetSpacing, PastBlocksMin, PastBlocksMax);
+		}
 }
 
 unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock)
