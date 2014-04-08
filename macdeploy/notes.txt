@@ -1,2 +1,2 @@
 Run in terminal from this folder:
-./macdeployqtplus ../CryptoMETH-Qt.app -add-qt-tr da,de,es,hu,ru,uk,zh_CN,zh_TW -dmg -fancy fancy.plist -verbose 
+./macdeployqtplus ../CryptoMETH-Qt.app -add-qt-tr da,de,es,hu,ru,uk,zh_CN,zh_TW -dmg -fancy fancy.plist -verbose 2
