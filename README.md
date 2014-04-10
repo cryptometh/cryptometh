@@ -16,6 +16,8 @@ We chose Keccak as our algorithm because it's ASIC-resistant and energy-saving, 
 Difficulty is handled by Kimoto Gravity Well to protect miners from multipools.
 The 0,9% pre-cook (premine) will go for promotion, bounties for services accepting METH. It's completely transparent, you can see the premine account in block explorer.
 
+More info on [CryptoMETH website](http://cryptometh.com)
+
 For advanced users
 ------------------
 ###Wallet compilation:
