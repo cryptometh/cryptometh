@@ -1,4 +1,4 @@
-CryptoMETH v1.1.0 
+CryptoMETH v1.2.0 
 http://cryptometh.com
 ==============
 
