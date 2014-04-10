@@ -1,7 +1,7 @@
 TEMPLATE = app
 TARGET = cryptometh-qt
 macx:TARGET = "CryptoMETH-Qt"
-VERSION = 1.1.0
+VERSION = 1.2.1
 INCLUDEPATH += src src/json src/qt
 QT += core gui network
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -25,8 +25,8 @@ CONFIG += static
 #BOOST_LIB_PATH=C:/deps/boost_1_55_0/stage/lib
 #BDB_INCLUDE_PATH=C:/deps/db-4.8.30.NC/build_unix
 #BDB_LIB_PATH=C:/deps/db-4.8.30.NC/build_unix
-#OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1e/include
-#OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1e
+#OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1g/include
+#OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1g
 #MINIUPNPC_INCLUDE_PATH=C:/deps/
 #MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
 
