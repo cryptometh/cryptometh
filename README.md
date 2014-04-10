@@ -1,6 +1,7 @@
 CryptoMETH
+==========
 Get addicted.
-================
+-------------
 
 Technical Information
 ---------------------
